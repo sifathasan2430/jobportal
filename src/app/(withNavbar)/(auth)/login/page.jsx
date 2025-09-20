@@ -62,8 +62,8 @@ export default function SignupFormDemo() {
     password:data?.password
    })
    if (response?.error){
-    toast({
-        title:response?.error,
+    toast(response?.error,{
+       
          description: 'Incorrect username or password',
           variant: 'destructive',
     })
