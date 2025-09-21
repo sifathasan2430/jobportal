@@ -81,4 +81,20 @@ const grid = [
       "Design and manage social media content with intuitive tools to ensure consistent delivery.",
     tags: ["Full Time", "10 Positions", "Remote", "22 LPA", "Bangladesh"],
   },
+   {
+    title: "React  Developer",
+    company: "Google",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/420px-Google_2015_logo.svg.png",
+    description:
+      "Join our team to build HIPAA and SOC2 compliant applications, ensuring data security and reliability.",
+    tags: ["Full Time", "12 Positions", "Remote", "24 LPA", "Bangladesh"],
+  },
+  {
+    title: "Seo Expert",
+    company: "InnovateTech",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/1920px-Uber_logo_2018.svg.png",
+    description:
+      "Design and manage social media content with intuitive tools to ensure consistent delivery.",
+    tags: ["Full Time", "10 Positions", "Remote", "22 LPA", "Bangladesh"],
+  },
 ];

@@ -25,8 +25,7 @@ export const POST=async(request)=>{
    const {email,username,password}=reqBody
    
 let verifyCode=Math.floor(100000 + Math.random()*900000)
-const salt=await genSalt(10)
-const hashPassword=await bcrypt.hash(password,salt)
+
  try{
     
     const existingUser=await User.findOne({email})
@@ -38,7 +37,7 @@ const hashPassword=await bcrypt.hash(password,salt)
     if (existingUser && !existingUser.isVerified){
     
        existingUser.username=username,
-       existingUser.password=hashPassword,
+     
        existingUser.verifyCode=verifyCode,
        existingUser.verifyCodeExpiry=Date.now()+5*60*1000 
       
@@ -51,7 +50,7 @@ const hashPassword=await bcrypt.hash(password,salt)
     }
     if (!existingUser){
       const newUser=new User({
-         email,username,password:hashPassword,
+         email,username,password,
          verifyCode,
          verifyCodeExpiry:Date.now()+5*60*1000 
       })
